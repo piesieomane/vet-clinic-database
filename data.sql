@@ -8,7 +8,7 @@ VALUES
 	(4,'Devimon', TO_DATE('05/12/2017', 'MM/DD/YYYY'), 5, true, 11);
 
 
-INSERT INTO animals (name, date_of_birth, escape_attempts, neutered, weight_kg)
+INSERT INTO animals (id, name, date_of_birth, escape_attempts, neutered, weight_kg)
 VALUES
 	(5, 'Charmander', DATE '2020-02-08', 0, false, -11.0);
  	(6, 'Plantmon', DATE '2021-11-15', 2, true, -5.7);
@@ -17,3 +17,6 @@ VALUES
 	(9, 'Boarmon', DATE '2005-06-07', 7, true, 20.4);
 	(10, 'Blossom', DATE '1998-10-13', 3, true, 17);
 	(11, 'Ditto', DATE '2022-05-14', 4, true, 22);
+
+INSERT INTO animals (id, name, date_of_birth, escape_attempts, neutered, weight_kg)
+VALUES	(11, 'Ditto', DATE '2022-05-14', 4, true, 22);
