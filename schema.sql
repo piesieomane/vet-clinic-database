@@ -11,4 +11,4 @@ CREATE TABLE animals (
 
 
 ALTER TABLE animals
-ADD species VARCHAR(12);
+ADD species VARCHAR(50);
