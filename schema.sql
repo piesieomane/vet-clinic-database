@@ -15,12 +15,15 @@ ADD species VARCHAR(50);
 
 --DAY 3
 CREATE TABLE owners (
-    id INTEGER,
+    id INTEGER serial primary key,
     full_name VARCHAR(200),
     age INTEGER
 );
 
 CREATE TABLE species (
-    id INTEGER,
+    id INTEGER serial primary key,
     name VARCHAR(200)
 );
+
+BEGIN;
+UPDATE animals 
