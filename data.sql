@@ -32,3 +32,6 @@ INSERT INTO species (name)
 VALUES
 	('Pokemon'),
 	('Digimon');
+
+BEGIN;
+UPDATE animals SET species_id WHERE name LIKE '%mon' = 'Digimon';
