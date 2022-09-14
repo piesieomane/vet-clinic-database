@@ -33,10 +33,10 @@ DROP COLUMN species;
 
 ALTER TABLE animals
 ADD  CONSTRAINT species_id 
-FOREIGN KEY (fk_columns)
+FOREIGN KEY (species_id)
 REFERENCES species (parent_key_columns);
 
 ALTER TABLE animals
 ADD CONSTRAINT owner_id
-FOREIGN KEY (fk_columns)
+FOREIGN KEY (owner_id)
 REFERENCES owners (parent_key_columns);
