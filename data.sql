@@ -35,3 +35,4 @@ VALUES
 
 BEGIN;
 UPDATE animals SET species_id WHERE name LIKE '%mon' = 'Digimon';
+UPDATE animals SET species_id WHERE namle IS NULL = 'Pokemon';
