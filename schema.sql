@@ -25,5 +25,5 @@ CREATE TABLE species (
     name VARCHAR(200)
 );
 
-BEGIN;
-UPDATE animals 
+ALTER TABLE animals 
+DROP COLUMN species;
