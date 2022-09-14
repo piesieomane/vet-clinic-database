@@ -30,3 +30,8 @@ MODIFY id INT(10) UNSIGNED AUTO_INCREMENT PRIMARY KEY;
 
 ALTER TABLE animals 
 DROP COLUMN species;
+
+ALTER TABLE animals
+ADD  CONSTRAINT species_id 
+FOREIGN KEY (fk_columns)
+REFERENCES species (parent_key_columns);
