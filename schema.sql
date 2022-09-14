@@ -35,3 +35,8 @@ ALTER TABLE animals
 ADD  CONSTRAINT species_id 
 FOREIGN KEY (fk_columns)
 REFERENCES species (parent_key_columns);
+
+ALTER TABLE animals
+ADD CONSTRAINT owner_id
+FOREIGN KEY (fk_columns)
+REFERENCES owners (parent_key_columns);
