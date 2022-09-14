@@ -17,5 +17,10 @@ ADD species VARCHAR(50);
 CREATE TABLE owners (
     id INTEGER,
     full_name VARCHAR(200),
-    age INTEGER,
+    age INTEGER
+);
+
+CREATE TABLE species (
+    id INTEGER,
+    name VARCHAR(200)
 );
