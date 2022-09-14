@@ -18,4 +18,4 @@ CREATE TABLE owners (
     id INTEGER,
     full_name VARCHAR(200),
     age INTEGER,
-)
+);
