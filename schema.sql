@@ -47,19 +47,16 @@ REFERENCES owners (parent_key_columns);
 
 --DAY 4 DB
 CREATE TABLE vets (
-  id BIGSERIAL PRIMARY KEY NOT NULL,
-	name VARCHAR(255),
-	age INT,
-	graduation_date date,
+    id BIGSERIAL NOT NULL PRIMARY KEY,
+    name VARCHAR(200) NOT NULL,
+    age INT,
+    date_of_graduation DATE NOT NULL
 );
 
-CREATE TABLE specializations (
-	vet_id INT,
-	species_id INT,
-	PRIMARY KEY (vet_id, species_id),
-	FOREIGN KEY (vet_id) REFERENCES vets (id),
-	FOREIGN KEY (species_id) REFERENCES species (id)
-); 
+CREATE TABLE specialization (
+    vets_id BIGINT REFERENCES vets (id),
+    species_id BIGINT REFERENCES species (id)
+);
 
 CREATE TABLE visits (
     vets_id BIGINT REFERENCES vets (id),
