@@ -60,3 +60,9 @@ CREATE TABLE specializations (
 	FOREIGN KEY (vet_id) REFERENCES vets (id),
 	FOREIGN KEY (species_id) REFERENCES species (id)
 ); 
+
+CREATE TABLE visits (
+    vets_id BIGINT REFERENCES vets (id),
+    animals_id BIGINT REFERENCES animals (id),
+    date_of_visit DATE NOT NULL
+);
