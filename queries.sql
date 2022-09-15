@@ -65,3 +65,5 @@ SELECT full_name, COUNT(owners_id) FROM owners JOIN animals on owners.id = anima
 
 --DAY 4
 SELECT animals.name FROM animals JOIN visits ON animals.id = visits.animals_id WHERE vets_id = '1' ORDER BY visits.date_of_visit desc limit 1;
+
+SELECT COUNT(DISTINCT animals_id) FROM visits WHERE vets_id = '2';
