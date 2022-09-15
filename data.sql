@@ -51,3 +51,10 @@ VALUES
 	('Vet Maisy Smith', '26',  date '2019-01-17'),
 	('Vet Stephanie Mendez', '64',  date '1981-05-04'),
 	('Vet Jack Harkness', '38',  date '2008-06-08');
+
+INSERT INTO specialization(vets_id, species_id)
+VALUES
+	('1', '1'),
+	('3', '1'),
+	('3', '2'),
+	('4', '2');
