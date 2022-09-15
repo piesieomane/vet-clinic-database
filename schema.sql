@@ -44,3 +44,11 @@ ALTER TABLE animals
 ADD CONSTRAINT owner_id
 FOREIGN KEY (owner_id)
 REFERENCES owners (parent_key_columns);
+
+--DAY 4 DB
+CREATE TABLE vets (
+  id BIGSERIAL PRIMARY KEY NOT NULL,
+	name VARCHAR(255),
+	age INT,
+	graduation_date date,
+);
